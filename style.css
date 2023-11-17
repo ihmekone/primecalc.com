@@ -1,0 +1,107 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    align-items: center;
+    background: linear-gradient(0deg, #00ffff, #f5fffa, #ff0000);
+    display: flex;
+    font-family: 'Dosis', sans-serif;
+    font-display: swap;
+    height: inherit;
+    justify-content: center;
+
+}
+
+.wrapper{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.30);
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    flex-basis: 400px;
+    height: 560px;
+    padding: 25px 40px;
+
+}
+
+.screen{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0,01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1) ;
+    color: #232323;
+    font-size: 35px;
+    overflow: auto;
+    padding: 20px;
+    text-align: right;
+    width: 330px;
+
+}
+
+.calc-nappirivi{
+    display: flex;
+    justify-content: space-between;
+    margin: 6% 0;   
+}
+
+.calc-nappi{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5,5px);
+    background: rgba(255, 255, 255, 0,75);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    flex-basis: 20%;
+    font-family: inherit;
+    font-size: 26px;
+    height: 65px; 
+}
+
+.calc-nappi:last-child{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5,5px);
+    background: rgba(255, 255, 255, 0,75);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #fff;
+    background: #696969;
+}
+
+.calc-nappi:last-child:hover{
+    background-color: inherit;
+    color: inherit;   
+}
+
+.calc-nappi:hover{
+    background-color: inherit;
+}
+
+.calc-nappi:active{
+    background-color: #00ffff;
+}
+
+.double{
+    flex-basis: 47%;
+}
+
+.triple{
+    flex-basis: 74%;
+}
