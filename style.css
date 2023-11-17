@@ -13,7 +13,7 @@ html{
 
 body{
     align-items: center;
-    background: linear-gradient(0deg, #00ffff, #f5fffa, #ff0000);
+    background: linear-gradient(#000000, #8b0000 845px);
     display: flex;
     font-family: 'Dosis', sans-serif;
     font-display: swap;
@@ -25,13 +25,13 @@ body{
 .wrapper{
     backdrop-filter: blur(5.5px);
     -webkit-backdrop-filter: blur(5.5px);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    border-radius: 28px;
+    box-shadow: 0 4px 35px #ffd700;
     color: #232323;
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     background: rgba(255, 255, 255, 0.30);
-    border: 1px solid rgba(255, 255, 255, 0.34);
+    border: 3px solid #fff;
     flex-basis: 400px;
     height: 560px;
     padding: 25px 40px;
@@ -42,7 +42,7 @@ body{
     backdrop-filter: blur(5.5px);
     -webkit-backdrop-filter: blur(5.5px);
     background: rgba(255, 255, 255, 0.75);
-    border: 1px solid rgba(255, 255, 255, 0,01);
+    border: 3px solid #000000;
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1) ;
     color: #232323;
@@ -64,7 +64,7 @@ body{
     backdrop-filter: blur(5.5px);
     -webkit-backdrop-filter: blur(5,5px);
     background: rgba(255, 255, 255, 0,75);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 3px solid #000000;
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
     color: #232323;
@@ -78,11 +78,11 @@ body{
     backdrop-filter: blur(5.5px);
     -webkit-backdrop-filter: blur(5,5px);
     background: rgba(255, 255, 255, 0,75);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 3px solid #000000;
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
-    color: #fff;
-    background: #696969;
+    color: #ffff;
+    background: #800000;
 }
 
 .calc-nappi:last-child:hover{
@@ -95,7 +95,7 @@ body{
 }
 
 .calc-nappi:active{
-    background-color: #00ffff;
+    background-color: #800000;
 }
 
 .double{
