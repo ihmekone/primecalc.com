@@ -41,6 +41,7 @@ function handleSymbol(symbol){
         case '−':
         case '×':
         case '÷':
+        case '√':
             handleMath(symbol);
             break;
     }
@@ -71,8 +72,12 @@ function flushOperation(intBuffer){
         runningTotal *= intBuffer
     }else if( previousOperator === '÷'){
         runningTotal /= intBuffer      
+    }else if( previousOperator === '√'){
+        runningTotal /= intBuffer      
     }
 }
+
+
 
 function handleNumber(numberString){
     if(buffer === '0'){
@@ -87,5 +92,6 @@ function init(){
         buttonClick(event.target.innerText);
     })
 }
+
 
 init();

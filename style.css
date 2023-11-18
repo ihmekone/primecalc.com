@@ -103,5 +103,21 @@ body{
 }
 
 .triple{
-    flex-basis: 74%;
+    flex-basis: 47%;
+}
+
+.calc-nappi-sqrt{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5,5px);
+    background: rgba(255, 255, 255, 0,75);
+    border: 3px solid #000000;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #ffff;
+    background: #800000;
+    flex-basis: 20%;
+}
+
+.calc-nappi-sqrt:hover{
+    background-color: inherit;
 }
