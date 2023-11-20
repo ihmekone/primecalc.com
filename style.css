@@ -13,7 +13,9 @@ html{
 
 body{
     align-items: center;
-    background: linear-gradient(#000000, #8b0000 845px);
+    background: #e5e5f7;
+    opacity: 1;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #483D8B	 55px ), repeating-linear-gradient( #FFFAFA, #FF00FF );
     display: flex;
     font-family: 'Dosis', sans-serif;
     font-display: swap;
@@ -26,11 +28,11 @@ body{
     backdrop-filter: blur(5.5px);
     -webkit-backdrop-filter: blur(5.5px);
     border-radius: 28px;
-    box-shadow: 0 4px 35px #ffd700;
+    box-shadow: 0 4px 35px #000000;
     color: #232323;
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
-    background: rgba(255, 255, 255, 0.30);
+    background: #696969;
     border: 3px solid #fff;
     flex-basis: 400px;
     height: 560px;
@@ -88,6 +90,10 @@ body{
 .calc-nappi:last-child:hover{
     background-color: inherit;
     color: inherit;   
+}
+
+.calc-nappi:last-child:active{
+background: #fff;
 }
 
 .calc-nappi:hover{
