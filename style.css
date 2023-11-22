@@ -15,7 +15,7 @@ body{
     align-items: center;
     background: #e5e5f7;
     opacity: 1;
-    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #483D8B	 55px ), repeating-linear-gradient( #FFFAFA, #FF00FF );
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #000000	 55px ), repeating-linear-gradient( #696969, #fff );
     display: flex;
     font-family: 'Dosis', sans-serif;
     font-display: swap;
@@ -32,8 +32,8 @@ body{
     color: #232323;
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
-    background: #696969;
-    border: 3px solid #fff;
+    background: #232;
+    border: 2px solid #000000;
     flex-basis: 400px;
     height: 560px;
     padding: 25px 40px;
@@ -44,7 +44,7 @@ body{
     backdrop-filter: blur(5.5px);
     -webkit-backdrop-filter: blur(5.5px);
     background: rgba(255, 255, 255, 0.75);
-    border: 3px solid #000000;
+    border: 2px solid #fff;
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1) ;
     color: #232323;
@@ -65,11 +65,11 @@ body{
 .calc-nappi{
     backdrop-filter: blur(5.5px);
     -webkit-backdrop-filter: blur(5,5px);
-    background: rgba(255, 255, 255, 0,75);
+    background: #696969;
     border: 3px solid #000000;
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
-    color: #232323;
+    color: #fff;
     flex-basis: 20%;
     font-family: inherit;
     font-size: 26px;
@@ -101,7 +101,8 @@ background: #fff;
 }
 
 .calc-nappi:active{
-    background-color: #800000;
+    background-color: #fff;
+    color: inherit;
 }
 
 .double{
@@ -120,10 +121,15 @@ background: #fff;
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
     color: #ffff;
-    background: #800000;
+    background: #232323;
     flex-basis: 20%;
 }
 
 .calc-nappi-sqrt:hover{
     background-color: inherit;
+}
+
+.calc-nappi-sqrt:active{
+    background-color: #fff;
+    color: inherit;
 }

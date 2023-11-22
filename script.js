@@ -3,6 +3,7 @@ let runningTotal = 0;
 let buffer = "0";
 let previousOperator;
 
+
 const screen = document.querySelector('.screen');
 
 function buttonClick(value){
@@ -41,6 +42,7 @@ function handleSymbol(symbol){
         case '−':
         case '×':
         case '÷':
+        case 'sqrt':
             handleMath(symbol);
             break;
     }
@@ -53,6 +55,9 @@ function handleMath(symbol){
 
     const intBuffer = parseInt(buffer);
 
+    const result = Math.sqrt(number);
+    console.log(`The square root of ${number} is ${result}`);
+ 
     if(runningTotal === 0){
         runningTotal = intBuffer;
     }else{
@@ -61,6 +66,12 @@ function handleMath(symbol){
     previousOperator = symbol;
     buffer = '0';
 }
+//function doMath(){
+  //  var inputNum1=document.form1.input1.value;
+    //var result = Math.sqrt(inputNum1);
+    //document.form1.answer.value = result;
+    //}
+
 
 function flushOperation(intBuffer){
     if(previousOperator === '+'){
@@ -71,9 +82,11 @@ function flushOperation(intBuffer){
         runningTotal *= intBuffer
     }else if( previousOperator === '÷'){
         runningTotal /= intBuffer      
+    }else if( previousOperator === 'sqrt'){
+        runningTotal = intBuffer
     }
 }
-
+// √
 
 
 function handleNumber(numberString){
@@ -90,8 +103,10 @@ function init(){
     })
 }
 
+
 init();
 
-Math.sqrt(x);
-x = 25
-y = x
+
+// const number = prompt('Enter the number: ');
+//const result = Math.sqrt(number);
+//console.log(`The square root of ${number} is ${result}`);
