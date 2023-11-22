@@ -42,7 +42,7 @@ function handleSymbol(symbol){
         case '−':
         case '×':
         case '÷':
-        case 'sqrt':
+        //case 'sqrt':
             handleMath(symbol);
             break;
     }
@@ -55,8 +55,8 @@ function handleMath(symbol){
 
     const intBuffer = parseInt(buffer);
 
-    const result = Math.sqrt(number);
-    console.log(`The square root of ${number} is ${result}`);
+    //const result = Math.sqrt(number);
+    //console.log(`The square root of ${number} is ${result}`);
  
     if(runningTotal === 0){
         runningTotal = intBuffer;
@@ -82,9 +82,9 @@ function flushOperation(intBuffer){
         runningTotal *= intBuffer
     }else if( previousOperator === '÷'){
         runningTotal /= intBuffer      
-    }else if( previousOperator === 'sqrt'){
-        runningTotal = intBuffer
-    }
+    }//else if( previousOperator === 'sqrt'){
+        //runningTotal = intBuffer
+    //}
 }
 // √
 
