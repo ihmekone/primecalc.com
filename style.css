@@ -15,7 +15,7 @@ body{
     align-items: center;
     background: #e5e5f7;
     opacity: 1;
-    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #000000	 55px ), repeating-linear-gradient( #696969, #fff );
+    background-image: linear-gradient(90deg, #ff3333, #ff9033, #fffc33, #7aff33, #3336ff, #8a33ff, #e333ff);
     display: flex;
     font-family: 'Dosis', sans-serif;
     font-display: swap;
